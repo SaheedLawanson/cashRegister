@@ -1,8 +1,6 @@
 # Cash Register
-Built with
-- Javascript
 
-Overview
+# Overview
 The cash register function is meant to simulate the way an hypothetical cash register machine would function, 
 the following are details on the goal of the project:
 1.	The machine has a certain amount of money in the drawer
@@ -14,14 +12,17 @@ the following are details on the goal of the project:
 6.	Certain outputs should be returned by the cash register depending on the relationship between
 	the customer's change and cash in the drawer
 
-Parameters
+# Built with
+- Javascript
+
+# Parameters
 The cash register function takes in three arguments:
 1. Price (int): cost of the customer's purchase (in dollars)
 2. Cash (int): The exact amount paid by the customer (in dollars)
 3. Cash in drawer (list): The value of each currency in the drawer in form
 			  of a list of lists e.g. [["PENNY", 1.01], ["NICKEL", 2.05],...]
 
-Return conditions
+# Return conditions
 Return {status: "INSUFFICIENT_FUNDS", change: []} if cash-in-drawer is less than the change due, 
 or if you cannot return the exact change. Say cash in drawer is a single 100 dollar bill and 
 change is 25 dollars.
